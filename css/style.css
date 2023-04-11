@@ -25,14 +25,17 @@ body {
     background: none;
     background-color: var(--cor-fundo);
 }
-.canecas-fundo{
+
+.canecas-fundo {
     background: none;
     background-color: var(--cor-fundo);
 }
-.action-figure-fundo{
+
+.action-figure-fundo {
     background: none;
     background-color: var(--cor-fundo);
 }
+
 .div1 {
     width: 400px;
     background-color: var(--cor-fundo);
@@ -134,7 +137,8 @@ main>div {
 main>div::-webkit-scrollbar {
     display: none;
 }
-main>h2{
+
+main>h2 {
     color: var(--branco);
     text-shadow: 2px 2px 3px var(--preto);
     margin: 20px;
@@ -149,11 +153,13 @@ footer {
 footer>p {
     margin: 0 auto;
 }
-footer>p>a{
+
+footer>p>a {
     text-decoration: none;
     color: darkred;
 }
-.loja{
+
+.loja {
     background: none;
     background-color: var(--cor-fundo);
 }
