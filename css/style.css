@@ -16,9 +16,14 @@ body {
     background-size: cover;
 }
 
-.fundo-inicial{
-background-image: url(../img/i569020.webp);
-background-size: cover;
+.fundo-inicial {
+    background-image: url(../img/i569020.webp);
+    background-size: cover;
+}
+
+.catalogo-fundo {
+    background: none;
+    background-color: var(--cor-fundo);
 }
 
 .div1 {
@@ -35,6 +40,10 @@ background-size: cover;
     flex-direction: column;
 }
 
+.div3 {
+    margin: 30px;
+}
+
 p {
     text-align: left;
     margin: 20px;
@@ -42,6 +51,10 @@ p {
     padding: 10px;
     margin-bottom: 10px;
     margin-top: -10px;
+}
+
+h1 {
+    padding: 10px;
 }
 
 input {
@@ -66,21 +79,16 @@ input {
     text-decoration: none;
 }
 
-.div3 {
-    margin: 30px;
-}
-
-h1 {
-    padding: 10px;
-}
 
 .foto {
     margin-top: 10px;
 }
-.logo{
+
+.logo {
     width: 80px;
 }
-header{
+
+header {
     background-color: var(--cor-fundo);
     display: flex;
     justify-content: space-between;
@@ -88,8 +96,15 @@ header{
     padding-right: 20px;
     align-items: center;
 }
-main{
-    margin-top: 200px;
+
+header>div>a {
+    text-decoration: none;
+    color: var(--branco);
+    text-shadow: 2px 2px 3px var(--preto);
+}
+
+.slogan {
+    margin-top: 190px;
     color: var(--branco);
     display: flex;
     justify-content: center;
@@ -97,14 +112,36 @@ main{
     align-items: center;
     text-shadow: 2px 2px 3px var(--preto);
 }
-footer{
+
+main>div>img {
+    width: 150px;
+    margin: 10px;
+}
+
+main>div {
+    display: flex;
+    overflow: scroll;
+}
+
+main>div::-webkit-scrollbar {
+    display: none;
+}
+main>h2{
+    color: var(--branco);
+    text-shadow: 2px 2px 3px var(--preto);
+    margin: 5px;
+}
+
+footer {
     background-color: var(--cor-fundo);
     display: flex;
-    margin-top: 350px;
+    margin-top: 346px;
 }
-footer>p{
+
+footer>p {
     margin: 0 auto;
 }
-.catalogo-fundo{
-    color: var(--cor-fundo);
+footer>p>a{
+    text-decoration: none;
+    color: darkred;
 }
