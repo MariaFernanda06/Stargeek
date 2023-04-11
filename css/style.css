@@ -126,6 +126,8 @@ header>div>a {
 main>div>img {
     width: 150px;
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px var(--preto);
 }
 
 main>div {
@@ -162,4 +164,8 @@ footer>p>a {
 .loja {
     background: none;
     background-color: var(--cor-fundo);
+}
+
+.terror1:hover{
+    content: url(../img/resident-evil2.gif);
 }
