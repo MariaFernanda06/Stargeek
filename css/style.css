@@ -26,16 +26,6 @@ body {
     background-color: var(--cor-fundo);
 }
 
-.canecas-fundo {
-    background: none;
-    background-color: var(--cor-fundo);
-}
-
-.action-figure-fundo {
-    background: none;
-    background-color: var(--cor-fundo);
-}
-
 .div1 {
     width: 400px;
     background-color: var(--cor-fundo);
@@ -105,6 +95,11 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
 }
 
 header>div>a {
@@ -128,12 +123,23 @@ main>div>img {
     margin: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px var(--preto);
+
+}
+
+main {
+    margin-top: 90px;
+}
+
+main>div>img:hover {
+    transform: scale(1.1);
 }
 
 main>div {
     display: flex;
     overflow: scroll;
     margin: 20px;
+    margin-top: 50px;
+
 }
 
 main>div::-webkit-scrollbar {
@@ -143,11 +149,10 @@ main>div::-webkit-scrollbar {
 main>h2 {
     color: var(--branco);
     text-shadow: 2px 2px 3px var(--preto);
-    margin: 20px;
+    margin: 10px;
 }
 
 footer {
-    background-color: var(--cor-fundo);
     display: flex;
     margin-top: 316px;
 }
@@ -166,6 +171,38 @@ footer>p>a {
     background-color: var(--cor-fundo);
 }
 
-.terror1:hover{
-    content: url(../img/resident-evil2.gif);
+@media (max-width:500px) {
+    .fundo-inicial {
+        background-image: url(../img/i569020.webp);
+        height: 654px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .slogan {
+        text-align: center;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .entrar {
+        margin-left: 10px;
+    }
+
+    .logo {
+        padding-right: 10px;
+    }
+
 }
