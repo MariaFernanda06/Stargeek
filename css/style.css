@@ -9,11 +9,13 @@
     --branco: white;
     --cor-botoes: rgba(27, 25, 25, 0.551);
     --preto: black;
+    --vermelho: darkred;
 }
 
 body {
     background-image: url(../img/fundo.jpg);
     background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .fundo-inicial {
@@ -79,6 +81,10 @@ input {
     text-decoration: none;
 }
 
+.entrar:hover {
+    background-color: var(--cor-fundo);
+    transition: 1;
+}
 
 .foto {
     margin-top: 10px;
@@ -152,24 +158,43 @@ main>h2 {
     margin: 10px;
 }
 
-footer {
+.footer-index {
     display: flex;
-    margin-top: 316px;
+    margin-top: 300px;
 }
 
-footer>p {
+.footer-index>p {
     margin: 0 auto;
 }
 
-footer>p>a {
+.footer-index>p>a {
     text-decoration: none;
-    color: darkred;
+    color: var(--vermelho);
 }
 
 .loja {
     background: none;
     background-color: var(--cor-fundo);
 }
+
+.rodape {
+    background-color: var(--cor-botoes);
+    margin-top: 58px;
+}
+
+.redes{
+margin-left: 10px;
+}
+
+.redes>li>a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.redes>li>a>img {
+    width: 15px;
+}
+
 
 @media (max-width:500px) {
     .fundo-inicial {
@@ -205,4 +230,7 @@ footer>p>a {
         padding-right: 10px;
     }
 
+    .rodape {
+        margin-top: 119px;
+    }
 }
